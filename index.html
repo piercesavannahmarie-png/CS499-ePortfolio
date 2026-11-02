@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Savannah Pierce's Computer Science Capstone ePortfolio">
+  <title>Savannah Pierce | Computer Science ePortfolio</title>
+  <style>
+    :root {
+      --bg: #0d1220;
+      --card: #192237;
+      --text: #f3f5ff;
+      --muted: #b5c0d5;
+      --accent: #a99bff;
+      --blue: #78c9ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 18px 8%;
+      background: #141c2e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover, a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 95px 20px 80px;
+      background: linear-gradient(135deg, #1b2542, #221a3d);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 6vw, 3.7rem);
+      margin: 0 0 10px;
+    }
+
+    .hero h2 {
+      color: var(--accent);
+      font-size: 1.3rem;
+      font-weight: normal;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 20px auto;
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: #101426;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .button:hover {
+      background: var(--blue);
+      color: #101426;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 24px 70px;
+    }
+
+    section {
+      padding-top: 55px;
+    }
+
+    h2 {
+      color: var(--accent);
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 800px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #34405d;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .card h3 {
+      color: var(--blue);
+      margin-top: 0;
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      color: var(--accent);
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: var(--blue);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #141c2e;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      header { justify-content: center; }
+      nav a { margin: 0 8px; }
+      .hero { padding: 65px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">SP | CS ePortfolio</div>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#capstone">Capstone</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Savannah Pierce</h1>
+    <h2>Computer Science | AI & Machine Learning Engineering</h2>
+    <p>
+      Welcome to my Computer Science Capstone ePortfolio.
+      Explore my work in software engineering, algorithms,
+      data structures, and database development.
+    </p>
+    <a class="button" href="#projects">Explore My Projects</a>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science student at Southern New Hampshire
+        University with a strong interest in artificial intelligence,
+        machine learning, and software development.
+      </p>
+      <p>
+        Throughout my degree program, I have developed applications
+        using Java, C++, Python, and JavaScript. My coursework has
+        included mobile application development, full-stack web
+        development, database management, algorithms, and
+        artificial intelligence.
+      </p>
+      <p>
+        My professional goal is to pursue a career in AI and
+        machine learning engineering, building reliable,
+        efficient, and data-driven software solutions.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Capstone Projects</h2>
+      <p class="section-intro">
+        These three projects were selected for enhancement as part
+        of my CS 499 Computer Science Capstone. Each demonstrates
+        a different area of computer science.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <span class="tag">CS 360 | Software Engineering</span>
+          <h3>MyWeightJourney</h3>
+          <p>
+            An Android application developed in Java for tracking
+            weight entries and personal goals. Planned enhancements
+            include improved software architecture, validation,
+            and progress analytics.
+          </p>
+          <a href="https://github.com/piercesavannahmarie-png/CS360-Mobile-Architect-Programming">
+            View Repository
+          </a>
+        </article>
+
+        <article class="card">
+          <span class="tag">CS 300 | Algorithms & Data Structures</span>
+          <h3>ABCU Course Catalog</h3>
+          <p>
+            A C++ course management application using a binary
+            search tree. Planned enhancements include prerequisite
+            graph traversal, cycle detection, and course planning.
+          </p>
+          <a href="https://github.com/piercesavannahmarie-png/CS300-Analysis-and-Design">
+            View Repository
+          </a>
+        </article>
+
+        <article class="card">
+          <span class="tag">CS 465 | Databases</span>
+          <h3>Travlr Getaways</h3>
+          <p>
+            A full-stack travel management application using
+            MongoDB, Express, Angular, and Node.js. Planned
+            enhancements include advanced queries, indexing,
+            and improved data validation.
+          </p>
+          <a href="https://github.com/piercesavannahmarie-png/cs465-fullstack">
+            View Repository
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="capstone">
+      <h2>CS 499 Capstone Enhancements</h2>
+      <p class="section-intro">
+        This section will document my development process,
+        original and enhanced artifacts, code review,
+        and reflection narratives.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Code Review</h3>
+          <p>
+            A walkthrough of the original applications,
+            areas for improvement, and planned enhancements.
+          </p>
+          <p>Coming in Module Two.</p>
+        </article>
+
+        <article class="card">
+          <h3>Enhancement Narratives</h3>
+          <p>
+            Reflections explaining the technical improvements,
+            challenges, design decisions, and course outcomes.
+          </p>
+          <p>To be added during the capstone.</p>
+        </article>
+
+        <article class="card">
+          <h3>Professional Self-Assessment</h3>
+          <p>
+            A reflection on my growth throughout the Computer
+            Science program and preparation for a professional
+            career in technology.
+          </p>
+          <p>Coming in Module Seven.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Connect With Me</h2>
+      <p>
+        Explore my source code and development projects on GitHub.
+      </p>
+      <p>
+        <a href="https://github.com/piercesavannahmarie-png">
+          My GitHub Profile
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Savannah Pierce | Computer Science ePortfolio</p>
+  </footer>
+</body>
+</html>
